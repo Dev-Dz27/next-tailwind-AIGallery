@@ -19,7 +19,7 @@
     "id": 2,
     "href": "/img/OscarPrize.png",
     "imageSrc": "/img/OscarPrize.png",
-    "name": "Oscar Prize For you guessed it",
+    "name": "Oscar Prize",
     "username": "Oscar Wilde",
     "category": "Writers"
   },
@@ -36,7 +36,7 @@
     "id": 4,
     "href": "/img/PopeFrancis.jpg",
     "imageSrc": "/img/PopeFrancis.jpg",
-    "name": "Original",
+    "name": "Original Pic",
     "username": "Pope Francis",
     "category": "Celebrities"
   },
@@ -109,7 +109,7 @@
     "href": "/img/PandaSelfie.webp",
     "imageSrc": "/img/PandaSelfie.webp",
     "name": "This could be us but no, Just gotta eat us",
-    "username": "Selfie with a my friend",
+    "username": "Selfie with my friend",
     "category": "Randoms"
   },
   {
@@ -134,6 +134,14 @@
     "imageSrc": "/img/School.webp",
     "name": "Lesson: How to properly wear the vest ",
     "username": "Army School",
+    "category": "Randoms"
+  },
+  {
+    "id": 17,
+    "href": "/img/Dublin.png",
+    "imageSrc": "/img/Dublin.png",
+    "name": "Samuel Beckett Bridge",
+    "username": "Dublin by night",
     "category": "Randoms"
   }
 ]

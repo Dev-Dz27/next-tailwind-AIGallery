@@ -62,25 +62,19 @@ export default function Gallery() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }} className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-normal md:text-4xl  mb-4 md:mb-8 text-center">
-          &quot;The possibilities of 
-            <span className="dark:text-purple-200 text-purple-500 font-semibold">
-            {" "}   AI  {" "}
+          &quot;Artificial intelligence will either be the
+            <span className="dark:text-green-300 text-green-400 font-semibold">
+            {" "}   best   {" "}
             </span> 
 
-            are 
-            <span className="dark:text-red-200 text-red-500 font-semibold">
+            or
+            <span className="dark:text-red-300 text-red-500 font-semibold">
             {" "} 
-            limited  {" "} 
+            worst  {" "} 
 </span> 
 
-             only by our 
-             <span className="dark:text-yellow-200 text-yellow-500 font-semibold">
-
-             {" "}     imaginations
-</span> 
-
-             .&quot; -{" "}
-            <span className="font-bold dark:text-slate-200 text--500 hover:text-purple-400">Ray Kurzweil</span>
+thing ever to happen to humanity. We do not yet know which&quot; -{" "}
+            <span className="font-bold dark:text-purple-200 text--500 hover:text-purple-400">Stephen Hawking</span>
           </h2>
         </motion.div>
       </div>
