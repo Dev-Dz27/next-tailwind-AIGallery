@@ -1,8 +1,6 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Button from "../components/Button";
-import { motion } from "framer-motion";
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -25,7 +23,7 @@ const Header = () => {
     if (currentTheme === "dark") {
       return (
         <Button
-          className="bg-gray-200 dark:bg-gray-600 cursor-pointer "
+          className="bg-opacity-20 bg-black backdrop-blur-lg rounded-full drop-shadow-lg  cursor-pointer "
           onClick={() => setTheme("light")}
         >
           <svg
@@ -45,7 +43,7 @@ const Header = () => {
     } else {
       return (
         <Button
-          className="bg-gray-200 cursor-pointer"
+          className="bg-opacity-5 bg-black backdrop-blur-lg rounded-full drop-shadow-lg cursor-pointer "
           onClick={() => setTheme("dark")}
         >
           <svg
@@ -62,7 +60,7 @@ const Header = () => {
   };
 
   return (
-    <header className="h-16 flex items-center justify-between">
+    <header className="h-16 flex items-center justify-between sticky top-0 z-10  ">
       <ul className="flex gap-4">
         {/* {navigations.map(nav => (
           <Link

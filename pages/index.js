@@ -58,7 +58,9 @@ export default function Gallery() {
           ))}
       </div>
       <div className=" py-8 mt-20 md:py-12">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div       initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }} className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-normal md:text-4xl  mb-4 md:mb-8 text-center">
           &quot;The possibilities of 
             <span className="dark:text-purple-200 text-purple-500 font-semibold">
@@ -72,7 +74,7 @@ export default function Gallery() {
 </span> 
 
              only by our 
-             <span className="dark:text-orange-200 text-orange-500 font-semibold">
+             <span className="dark:text-yellow-200 text-yellow-500 font-semibold">
 
              {" "}     imaginations
 </span> 
@@ -80,7 +82,7 @@ export default function Gallery() {
              .&quot; -{" "}
             <span className="font-bold dark:text-slate-200 text--500 hover:text-purple-400">Ray Kurzweil</span>
           </h2>
-        </div>
+        </motion.div>
       </div>
     </div>
           </>

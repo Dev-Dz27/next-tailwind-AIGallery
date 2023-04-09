@@ -9,12 +9,16 @@ const Hero = () => {
     >
       <h1 className="text-7xl font-bold dark:text-white text-black">
         Welcome To the{" "}
-        <span className="dark:text-purple-600 text-purple-500 ">
+        
+        <span className="flex dark:text-purple-600 text-purple-500 ">
           AI Gellery
         </span>
       </h1>
-      <h3 className="text-4xl my-3">None of the pictures are REAL</h3>
-      <p className="text-gray-700 mb-8">
+      <h3 className="text-3xl my-3">Guess the pictures which are <span className="font-medium text-purple-400 dark:text-purple-300">
+      REAL
+        </span> 
+      </h3>
+      <p className="text-gray-700 dark:text-gray-400 mb-8">
         To view the full size of the image, simply click on it{" "}
       </p>
       <a
