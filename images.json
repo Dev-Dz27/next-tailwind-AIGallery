@@ -1,5 +1,4 @@
 [
-
   {
     "id": 0,
     "href": "https://i.redd.it/5clnkr98nisa1.jpg",
@@ -10,6 +9,14 @@
   },
   {
     "id": 1,
+    "href": "/img/OscarWilde.jpg",
+    "imageSrc": "/img/OscarWilde.jpg",
+    "name": "Original Pic",
+    "username": "Oscar Wilde",
+    "category": "Writers"
+  },
+  {
+    "id": 2,
     "href": "https://cdn.midjourney.com/7ded5dc0-906d-4ae8-91d1-14252ab2c740/grid_0.png",
     "imageSrc": "https://cdn.midjourney.com/7ded5dc0-906d-4ae8-91d1-14252ab2c740/grid_0.png",
     "name": "Oscar Prize For you guessed it",
@@ -17,22 +24,14 @@
     "category": "Writers"
   },
   {
-    "id": 2,
+    "id": 3,
     "href": "https://cdn.midjourney.com/6924b6ff-450a-496b-99c3-a68ff0d8e652/grid_0.png",
     "imageSrc": "https://cdn.midjourney.com/6924b6ff-450a-496b-99c3-a68ff0d8e652/grid_0.png",
     "name": "Feeling Confident ",
     "username": "Oscar Wilde",
     "category": "Writers"
   },
-  {
-    "id": 3,
-    "href": "/img/OscarWilde.jpg",
-    "imageSrc": "/img/OscarWilde.jpg",
-    "name": "Original Pic",
-    "username": "Oscar Wilde",
-    "category": "Writers"
-  },
-  
+
   {
     "id": 4,
     "href": "/img/PopeFrancis.jpg",
