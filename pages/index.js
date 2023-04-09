@@ -26,60 +26,66 @@ export default function Gallery() {
       : images.filter((image) => image.category === selectedFilter);
   return (
     <>
-<Head>
+      <Head>
         <title>AI Gallery | Fetnaci</title>
       </Head>
-    <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8  transition-all ease-in-out duration-700  ">
-      <div className="mb-16 mt-[-80px]">
-        <Hero />
-      </div>
-      <div
-        id="Gallery"
-        className="flex justify-center space-x-2 lg:space-x-7 mb-8"
+      <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8  transition-all ease-in-out duration-700  ">
+        <div className="mb-16 mt-[-80px]">
+          <Hero />
+        </div>
+        <div
+          id="Gallery"
+          className="flex justify-center space-x-2 lg:space-x-7 mb-8"
         >
-        {filters.map((filter) => (
-          <button
-          key={filter.name}
-          className={cn(
-            "py-2 px-[8px] sm:font-normal sm:px-3 md:px-4 lg:px-6 md:font-medium lg:font-semibold font-light rounded-md hover:ring-2 hover:ring-gray-300",
-            selectedFilter === filter.name
-            ? "bg-purple-800 text-white "
-            : "bg-gray-200  dark:bg-gray-600  "
-            )}
-            onClick={() => setSelectedFilter(filter.name)}
+          {filters.map((filter) => (
+            <button
+              key={filter.name}
+              className={cn(
+                "py-2 px-[8px] sm:font-normal sm:px-3 md:px-4 lg:px-6 md:font-medium lg:font-semibold font-light rounded-md hover:ring-2 hover:ring-gray-300",
+                selectedFilter === filter.name
+                  ? "bg-purple-800 text-white "
+                  : "bg-gray-200  dark:bg-gray-600  "
+              )}
+              onClick={() => setSelectedFilter(filter.name)}
             >
-            {filter.label}
-          </button>
-        ))}
-      </div>
-      <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-        {filteredImages.map((image) => (
-          <BlurImage key={image.id} image={image} />
+              {filter.label}
+            </button>
           ))}
+        </div>
+        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          {filteredImages.map((image) => (
+            <BlurImage key={image.id} image={image} />
+          ))}
+        </div>
+        <div className=" py-8 mt-20 md:py-12">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8"
+          >
+            <h2 className="text-2xl font-normal md:text-4xl  mb-4 md:mb-8 text-center">
+              &quot;Artificial intelligence will either be the
+              <span className="dark:text-green-300 text-green-400 font-semibold">
+                {" "}
+                best{" "}
+              </span>{" "}
+              or{" "}
+              <span className="dark:text-red-300 text-red-500 font-semibold">
+                {" "}
+                worst{" "}
+              </span>
+              thing ever to happen to humanity.
+              <br /> We do not yet know which&quot; {" "}
+              <span className="font-bold dark:text-purple-200 text--500 hover:text-purple-400">
+              <br />
+              -Stephen Hawking-
+              </span>
+            </h2>
+          </motion.div>
+        </div>
       </div>
-      <div className=" py-8 mt-20 md:py-12">
-        <motion.div       initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }} className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-normal md:text-4xl  mb-4 md:mb-8 text-center">
-          &quot;Artificial intelligence will either be the
-            <span className="dark:text-green-300 text-green-400 font-semibold">
-            {" "}   best   {" "}
-            </span> 
-
-            or
-            <span className="dark:text-red-300 text-red-500 font-semibold">
-            {" "} 
-            worst  {" "} 
-</span> 
-
-thing ever to happen to humanity. We do not yet know which&quot; -{" "}
-            <span className="font-bold dark:text-purple-200 text--500 hover:text-purple-400">Stephen Hawking</span>
-          </h2>
-        </motion.div>
-      </div>
-    </div>
-          </>
+    </>
   );
 }
 function BlurImage({ image }) {
